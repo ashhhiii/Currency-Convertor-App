@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background: #FBE4D8;
+    color: #854F6C;
+    font-family: 'Poppins', 'Roboto', 'Martel Sans', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    background-color: #854F6C;
+    padding: 16px 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(133, 79, 108, 0.15);
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+    background: transparent;
+    padding: 0;
+    margin-left: auto;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #FBE4D8;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav li a:hover, nav li a:focus {
+    background: rgba(251, 228, 216, 0.1);
+    color: #FBE4D8;
+}
+
+div.logo {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: #FBE4D8;
+    letter-spacing: 1px;
+}
+
+.container {
+    min-height: 80vh;
+    font-family: 'Poppins', sans-serif;
+    max-width: 500px;
+    margin: 100px auto 32px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(133, 79, 108, 0.15), 0 1.5px 8px rgba(0,0,0,0.12);
+    padding: 40px 32px 32px 32px;
+}
+
+.container h1 {
+    padding: 10px 0 24px 0;
+    font-size: 2rem;
+    text-align: center;
+    color: #854F6C;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #854F6C;
+    padding: 24px 0 12px 0;
+    opacity: 0.7;
+    font-size: 1rem;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container form label {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    color: #854F6C;
+    font-weight: 500;
+}
+
+.container form input[type='number'],
+.container form select {
+    font-size: 1.1rem;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1.5px solid #854F6C;
+    background: #FBE4D8;
+    color: #854F6C;
+    margin-bottom: 8px;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.container form input[type='number']:focus,
+.container form select:focus {
+    border-color: #5a364a;
+    box-shadow: 0 0 0 3px rgba(133, 79, 108, 0.2);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    background: #854F6C;
+    color: #FBE4D8;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(133, 79, 108, 0.10);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover, .btn:focus {
+    background: #5a364a;
+    color: #FBE4D8;
+    box-shadow: 0 4px 16px rgba(133, 79, 108, 0.18);
+}
+
+.output {
+    margin-top: 32px;
+}
+
+.output h2 {
+    font-size: 1.2rem;
+    padding: 12px 0;
+    color: #854F6C;
+    text-align: center;
+}
+
+.output table {
+    width: 100%;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    color: #854F6C;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(133, 79, 108, 0.10);
+}
+
+.output table th, .output table td {
+    padding: 12px 8px;
+}
+
+.output table th {
+    background: #854F6C;
+    color: #FBE4D8;
+    font-weight: 700;
+}
+
+.output table tr:nth-child(even) {
+    background: #FBE4D8;
+}
+
+.output table tr:nth-child(odd) {
+    background: #fff;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        font-size: 16px;
+        padding: 12px 8px;
+    }
+    .container {
+        max-width: 98vw;
+        margin: 80px 2vw 24px 2vw;
+        padding: 24px 8px 16px 8px;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+    .output table th, .output table td {
+        padding: 8px 4px;
+        font-size: 0.95rem;
+    }
+    .container h1 {
+        font-size: 1.3rem;
+    }
+}
