@@ -30,7 +30,7 @@ Start the application:
 ```bash
 npm start
 ```
-Open your browser and go to `http://localhost:3000` to use the app.
+Open your browser and go to[ `http://localhost:3000](https://currency-convertor-app-rho.vercel.app/)` to use the app.
 
 ## Technologies Used
 
